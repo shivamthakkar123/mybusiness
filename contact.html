@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - BizLaunch</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <header>
+  <div class="logo">
+    <img src="BizLaunch.png" alt="BizLaunch Logo" />
+    <span class="brand-name">BizLaunch</span>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="payment.html">Pay</a>
+  </nav>
+</header>
+  <section class="content">
+    <h1>Contact Us</h1>
+    <p>Email: contact@bizlaunch.com<br>Phone: +91-9876543210</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message"></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 BizLaunch Solutions | All rights reserved</p>
+  </footer>
+</body>
+</html>
+<style>
+    /* Header layout */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo and brand */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 45px;
+  margin-right: 10px;
+}
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation links (desktop) */
+nav {
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive styles (mobile) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #005fa3;
+    margin-top: 10px;
+  }
+
+  nav a {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+</style>
