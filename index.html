@@ -41,7 +41,7 @@
   </footer>
   
 </html>
-  <style>
+    <style>
     * {
       margin: 0;
       padding: 0;
@@ -59,7 +59,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     .logo {
       display: flex;
@@ -87,6 +89,11 @@
       display: none;
       font-size: 28px;
       cursor: pointer;
+      margin-left: auto;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
       margin-left: auto;
     }
     .hero {
@@ -124,7 +131,6 @@
     @media (max-width: 768px) {
       .menu-toggle {
         display: block;
-        margin-left: auto;
       }
       nav {
         display: none;
@@ -143,4 +149,3 @@
       }
     }
   </style>
-
