@@ -45,76 +45,102 @@
 </body>
 </html>
 <style>
-    /* Header layout */
-header {
-  background-color: #0077cc;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Logo and brand */
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  height: 45px;
-  margin-right: 10px;
-}
-.brand-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-/* Navigation links (desktop) */
-nav {
-  display: flex;
-  gap: 25px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hamburger icon (hidden on desktop) */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Responsive styles (mobile) */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #005fa3;
-    margin-top: 10px;
-  }
-
-  nav a {
-    padding: 12px;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
-</style>
-
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 45px;
+      margin-right: 10px;
+    }
+    .brand-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .hero {
+      padding: 60px 20px;
+      background-color: #e6f0ff;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .btn {
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #005fa3;
+        margin-top: 10px;
+      }
+      nav.active {
+        display: flex;
+      }
+      nav a {
+        padding: 12px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  </style>
